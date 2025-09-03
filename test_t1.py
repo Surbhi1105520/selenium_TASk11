@@ -47,9 +47,9 @@ def test_guvi(setup):
     driver = setup
     driver.get('https://www.guvi.in/sign-in/')
     email_field = driver.find_element(By.ID, "email")
-    email_field.send_keys("surbhi1105520@gmail.com")
+    email_field.send_keys("surbh@gmail.com")
     password_field = driver.find_element(By.ID, "password")
-    password_field.send_keys("Avnisingh@2575")
+    password_field.send_keys("XXXXX")
     login = driver.find_element(By.ID, "login-btn")
     login.click()
 
@@ -57,6 +57,7 @@ def test_guvi(setup):
 
 
     driver.quit()
+
 
 
 
