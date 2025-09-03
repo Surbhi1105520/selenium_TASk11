@@ -25,8 +25,8 @@ def test_positive_login_fields_and_button(setup):
     assert login_button.is_displayed() and login_button.is_enabled(), "Login button is not visible/enabled"
 
     # Enter valid credentials
-    email_field.send_keys("surbhi1105520@gmail.com")
-    password_field.send_keys("Avnisingh@2575")
+    email_field.send_keys("surbh@gmail.com")
+    password_field.send_keys("XXXXX")
     login_button.click()
 
     time.sleep(5)
@@ -65,3 +65,4 @@ def test_negative_login_fields_and_button(setup):
         assert "Incorrect" in error_message or "invalid" in error_message.lower()
     except:
         print("No error message element found – please confirm selector.")
+
